@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* VARIABLES */
+:root {
+    --bg-color: #0f172a;
+    --bg-secondary: #111827;
+    --text-color: #e5e7eb;
+    --accent-color: #38bdf8;
+    --hover-color: #0ea5e9;
+    --border-color: #1f2933;
+}
+
+/* ******************  BODY ************************** */
+body {
+    font-family: 'Anonymous Pro', monospace;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* ****************** HEADER ************************ */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+/* ****************** TITULO ************************ */
+h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+/* ****************** NAV ************************ */
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* ****************** EFECTO SUBRAYADO ************************ */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ****************** MAIN ************************ */
+main {
+    max-width: 1300px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+/* ****************** SECCIONES ************************ */
+section {
+    margin-bottom: 60px;
+    padding: 30px;
+    background-color: var(--bg-secondary);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: var(--accent-color);
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.contenido img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover; /* evita que se deforme */
+    border: 3px solid #ccc;
+
+}
+
+.skills, .hobbies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.skill, .hobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.skill img {
+    width: 60px;
+}
+
+.skill p, .hobby p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.skill:hover, .hobby:hover {
+    transform: scale(1.1);
+}
+
+.peliculas, .discos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pelicula, .disco{
+    display: flex;
+    gap: 20px;
+    align-items: center; /* centra verticalmente la imagen con el texto */
+    background-color: #133a5bc9;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Imagen izquierda */
+.pelicula img, .disco img {
+    width: 100px;
+    border-radius: 8px;
+}
+
+/* Contenedor del texto */
+.pelicula div, .disco div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Título arriba */
+.pelicula h4, .disco h4 {
+    margin: 0 0 8px 0;
+}
+
+/* Descripción abajo */
+.pelicula p, .disco p {
+    margin: 0;
+}
+
+.pelicula:hover, .disco:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.discos a, .discos a:visited {
+    text-decoration: none;
+    color: var(--text-color) !important;
+}
+
+/* ****************** FORMULARIO ************************ */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    color-scheme: dark; /* le dice al navegador que el input es de tema oscuro */
+}
+
+input:focus, textarea:focus  {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+button[type="submit"] {
+    background-color: var(--accent-color);
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--hover-color);
+}
+
+textarea {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+/* bug fondo blanco que genera chrome los input luego de autocompletar */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0px 1000px var(--bg-color) inset;
+    -webkit-text-fill-color: var(--text-color);
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: var(--text-color); /* color del cursor de texto */
+}
+
+/* ****************** FOOTER ************************ */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--border-color);
+    background: #111827;
+}
+
+/* ****************** ICONOS ************************ */
+.icono {
+    font-size: 1.8rem;
+    margin: 10px;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* ****************** LINKEDIN ****************** */
+.linkedin {
+    color: #0A66C2;
+}
+
+.linkedin:hover {
+    transform: scale(1.2);
+    color: #004182;
+}
+
+/* ****************** GITHUB ****************** */
+.github {
+    color: #e5e7eb;
+}
+
+.github:hover {
+    transform: scale(1.2);
+    color: #9ca3af;
+}
+
+/* ******************* SCROLL BUTTONS ******************* */
+.scroll-btn {
+    position: fixed;
+    right: 20px;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    color: #000;
+    cursor: pointer;
+    font-size: 1.2rem;
+    z-index: 1000;
+    transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+/* botón arriba */
+#btn-arriba {
+    bottom: 80px;
+}
+
+#btn-arriba {
+    opacity: 0;
+}
+
+/* botón abajo */
+#btn-abajo {
+    bottom: 20px;
+}
+
+.scroll-btn:hover {
+    transform: scale(1.2);
+}
+
+/* ****************** RESPONSIVE ******************s */
+@media (max-width: 768px) {
+    header {
+        gap: 15px;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: var(--bg-secondary);
+        width: 200px;
+        border-radius: 10px;
+        display: none; /* oculto por defecto */
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav.active {
+        display: block; /* aparece cuando está activo */
+    }
+
+    .contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+}
