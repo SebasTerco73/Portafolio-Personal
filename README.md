@@ -8,7 +8,7 @@ Sitio web de mi portafolio personal desarrollado con HTML5, CSS3. Con el fin de 
 
 ## 🚀 Demo
 
-[Ver en vivo](https://portafolio-personal-sebasputche73.vercel.app) <!-- actualizar con la URL real si es diferente -->
+[Ver en vivo](https://sebasterco73.github.io/Portafolio-Personal/)
 
 ## 📋 Secciones
 
