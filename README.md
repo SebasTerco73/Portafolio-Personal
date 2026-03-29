@@ -1,6 +1,10 @@
 # Portafolio Personal — Sebastián Matías Puche
 
-Sitio web de portafolio personal desarrollado con HTML5, CSS3 y JavaScript vanilla.
+![Github](https://img.shields.io/badge/github-repo-blue?logo=github)
+![HTML](https://img.shields.io/badge/html5-markup-orange?logo=html5)
+![CSS](https://img.shields.io/badge/css3-styles-blue?logo=css)
+
+Sitio web de mi portafolio personal desarrollado con HTML5, CSS3. Con el fin de entregarlo como parte de mi PFO1 de la materia front-end de la tecnicatura en desarrollo de software
 
 ## 🚀 Demo
 
