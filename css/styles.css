@@ -261,7 +261,7 @@ textarea {
     resize: none;
 }
 
-/* bug fondo blanco que genera chrome los input luego de autocompletar */
+/* bug fondo blanco que genera chrome en los input luego de autocompletar */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,

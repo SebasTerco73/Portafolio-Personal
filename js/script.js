@@ -6,7 +6,7 @@ btn.addEventListener('click', () => {
     nav.classList.toggle('active');
 });
 
-// 🔥 cerrar menú al hacer click en un link
+// cerrar menú al hacer click en un link
 links.forEach(link => {
     link.addEventListener('click', () => {
         nav.classList.remove('active');
