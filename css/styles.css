@@ -16,7 +16,7 @@ a {
 :root {
     --bg-color: #0f172a;
     --bg-secondary: #111827;
-    --text-color: #e5e7eb;
+    --text-color: ivory;
     --accent-color: #38bdf8;
     --hover-color: #0ea5e9;
     --border-color: #1f2933;
@@ -161,13 +161,13 @@ h2 {
     transform: scale(1.1);
 }
 
-.peliculas, .discos {
+.peliculas, .discos, .proyectos {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.pelicula, .disco{
+.pelicula, .disco, .proyecto {
     display: flex;
     gap: 20px;
     align-items: center; /* centra verticalmente la imagen con el texto */
@@ -182,31 +182,36 @@ h2 {
     border-radius: 8px;
 }
 
+.proyecto img {
+    width: 150px;
+    border-radius: 8px;
+}
+
 /* Contenedor del texto */
-.pelicula div, .disco div {
+.pelicula div, .disco div, .proyecto div {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 /* Título arriba */
-.pelicula h4, .disco h4 {
+.pelicula h4, .disco h4, .proyecto h4 {
     margin: 0 0 8px 0;
 }
 
 /* Descripción abajo */
-.pelicula p, .disco p {
+.pelicula p, .disco p, .proyecto p {
     margin: 0;
 }
 
-.pelicula:hover, .disco:hover {
+.pelicula:hover, .disco:hover, .proyecto:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-.discos a, .discos a:visited {
+.discos a, .discos a:visited, .proyectos a, .proyectos a:visited {
     text-decoration: none;
-    color: var(--text-color) !important;
+    color: var(--text-color);
 }
 
 /* ****************** FORMULARIO ************************ */
