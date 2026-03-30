@@ -14,6 +14,7 @@ Sitio web de mi portafolio personal desarrollado con HTML5, CSS3. Con el fin de 
 
 - **Sobre mí** — Breve presentación personal y motivaciones como desarrollador.
 - **Skills** — Tecnologías y herramientas que manejo.
+- **Proyectos** — Algunos de mis proyectos.
 - **Hobbies** — Intereses personales.
 - **Películas** — Películas favoritas con descripción.
 - **Discos** — Álbumes favoritos con enlace a YouTube.
@@ -42,7 +43,10 @@ Portafolio-Personal/
 │   ├── peli3.jfif
 │   ├── disco1.avif
 │   ├── disco2.jpg
-│   └── disco3.jfif
+│   ├── disco3.jfif
+│   ├── proyecto1.jfif
+│   ├── proyecto2.png
+│   └── proyecto3.png
 ├── js/
 │   └── script.js
 ├── index.html
