@@ -381,4 +381,8 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+
+    .pelicula, .disco, .proyecto {
+    flex-direction: column;
+}
 }

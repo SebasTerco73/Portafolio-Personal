@@ -8,7 +8,8 @@ Sitio web de mi portafolio personal desarrollado con HTML5, CSS3. Con el fin de 
 
 ## 🚀 Demo
 
-[Ver en vivo](https://sebasterco73.github.io/Portafolio-Personal/)
+- [Vercel](https://sebasterco73.github.io/Portafolio-Personal/)
+- [Github Pages](https://portafolio-personal-eosin-six.vercel.app/)
 
 ## 📋 Secciones
 
