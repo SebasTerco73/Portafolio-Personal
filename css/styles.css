@@ -101,7 +101,7 @@ main {
 
 /* ****************** SECCIONES ************************ */
 section {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     padding: 30px;
     background-color: var(--bg-secondary);
     border-radius: 12px;
@@ -384,5 +384,10 @@ footer {
 
     .pelicula, .disco, .proyecto {
     flex-direction: column;
-}
+    }
+
+    .pelicula img, .disco img, .proyecto img  {
+        width: stretch; /* la imagen se estira para ocupar todo el ancho del contenedor */
+        max-width: 100%; /* pero no se estira más allá de su tamaño original */
+    }
 }
